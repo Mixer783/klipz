@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+/* header */
+
+header{
+    height: 350px;
+    width: 100%;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: visible;
+}
+
+.header-transicion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background-image: 
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+    z-index: 0;
+}
+
+.elementos-perfil-info-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: -130px; 
+    padding: 0 70px;
+    z-index: 1;
+    position: relative;
+}
+
+.elementos-avatar-perfil{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.elementos-header-perfil-cosas{
+    background-color: rgb(60, 60, 60);
+    border-radius: 16px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100px;
+    width: 750px;
+}
+
+.elementos-header-perfil-info-username{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 50px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.elementos-header-perfil-info-redes{
+    background-color: black;
+    border-radius: 12px;
+    padding: 10px 16px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    
+}
+
+.elementos-header-perfil-info-redes img{
+    height: 50px;
+    width: 50px;
+}
+
+/* elementos perfil */
+
+.elementos-perfil{
+    align-items: center;
+    display: flex;
+    justify-self: center;
+    width: 1000px;
+    margin-left: -170px;
+    margin-top: -30px;
+}
+
+.elementos-perfil-descripcion{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 35px;
+    margin: 0;
+}
+
+/* linea */
+
+.linea{
+    width: 1600px;
+    border-top: 1px solid rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 60px;
+}
+
+/* audio */
+
+.elementos-perfil-widgets-musica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background-color: #0d0d0d;
+    border-radius: 16px;
+    padding: 32px 48px;
+    width: 520px;
+    margin: 40px auto;
+}
+
+.musica-titulo{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 22px;
+    margin: 0;
+    text-align: center;
+}
+
+.musica-controles{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.musica-tiempo{
+    color: #888;
+    font-family: 'Google Sans Flex';
+    font-size: 13px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.musica-barra{
+    flex-grow: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: #222;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.musica-barra::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #666;
+    cursor: pointer;
+}
+
+.musica-barra::-moz-range-thumb{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #666;
+    cursor: pointer;
+    border: none;
+}
+
+.musica-boton-play{
+    background: #222;
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.musica-boton-play:hover{
+    background: #333;
+}
+
+/* watermark */
+
+.elementos-watermark{
+    position: fixed;
+    bottom: 0;
+    width: 550px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: end;
+}
+
+.elementos-watermark-texto{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 15px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+/* media queries movil y tablet (≤1024px) — mismo layout horizontal que PC */
+
+@media (max-width: 1024px){
+
+    body{
+        overflow-x: hidden;
+        padding-bottom: 80px;
+    }
+
+    header{
+        height: 200px;
+    }
+
+    .elementos-perfil-info-container{
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+        margin-top: -55px;
+        padding: 0 16px;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .elementos-avatar-perfil{
+        height: 100px;
+        width: 100px;
+    }
+
+    .elementos-header-perfil-cosas{
+        flex: 0 1 auto;
+        min-width: 0;
+        width: auto;
+        max-width: min(500px, calc(100vw - 130px));
+        height: 50px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 12px;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+
+    .elementos-header-perfil-info-username{
+        font-size: 22px;
+        margin-left: 0;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .elementos-header-perfil-info-redes{
+        height: 42px;
+        width: auto;
+        flex-shrink: 0;
+        padding: 6px 8px;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+
+    .elementos-header-perfil-info-redes img{
+        height: 32px;
+        width: 32px;
+    }
+
+    .elementos-perfil{
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 8px;
+        padding: 0 16px;
+        box-sizing: border-box;
+        justify-content: flex-start;
+    }
+
+    .elementos-perfil-descripcion{
+        font-size: 20px;
+        word-break: break-word;
+        margin-left: 95px;
+    }
+
+    .linea{
+        width: calc(100% - 32px);
+        margin-top: 32px;
+    }
+
+    .elementos-perfil-widgets-musica{
+        width: calc(100% - 32px);
+        max-width: 100%;
+        margin: 24px auto;
+        padding: 24px 16px;
+        box-sizing: border-box;
+    }
+
+    .musica-titulo{
+        font-size: 18px;
+    }
+
+    .musica-controles{
+        gap: 10px;
+    }
+
+    .elementos-watermark{
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        max-width: calc(100% - 32px);
+        margin-left: 0;
+        margin-bottom: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* tablet — div gris más grande */
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    header{
+        height: 260px;
+    }
+
+    .elementos-perfil-info-container{
+        gap: 24px;
+        margin-top: -75px;
+        padding: 0 32px;
+    }
+
+    .elementos-avatar-perfil{
+        height: 140px;
+        width: 140px;
+    }
+
+    .elementos-header-perfil-cosas{
+        flex: 1 1 auto;
+        width: calc(100vw - 32px - 140px - 24px);
+        max-width: 750px;
+        min-width: 0;
+        height: 85px;
+        padding: 12px 20px;
+        gap: 16px;
+    }
+
+    .elementos-header-perfil-info-username{
+        font-size: 36px;
+    }
+
+    .elementos-header-perfil-info-redes{
+        height: 64px;
+        padding: 8px 14px;
+        gap: 12px;
+    }
+
+    .elementos-header-perfil-info-redes img{
+        height: 44px;
+        width: 44px;
+    }
+
+    .elementos-perfil-descripcion{
+        font-size: 26px;
+        margin-left: calc(32px + 140px + 24px + 20px);
+    }
+
+}
+
+/* movil pequeño — avatar aún más compacto */
+
+@media (max-width: 480px){
+
+    .elementos-perfil-info-container{
+        gap: 10px;
+        margin-top: -45px;
+    }
+
+    .elementos-avatar-perfil{
+        height: 80px;
+        width: 80px;
+    }
+
+    .elementos-header-perfil-cosas{
+        height: 50px;
+        max-width: min(400px, calc(100vw - 106px));
+        padding: 6px 8px;
+        gap: 8px;
+    }
+
+    .elementos-header-perfil-info-username{
+        font-size: 18px;
+    }
+
+    .elementos-header-perfil-info-redes{
+        height: 36px;
+        padding: 4px 6px;
+        gap: 6px;
+    }
+
+    .elementos-header-perfil-info-redes img{
+        height: 26px;
+        width: 26px;
+    }
+
+    .elementos-perfil-descripcion{
+        font-size: 16px;
+    }
+
+}

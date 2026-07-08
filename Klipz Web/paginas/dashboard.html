@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/dashboard.css" rel="stylesheet">
+    <title>Klipz | Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-div">
+
+<!-- Seccion header -->
+
+    <header>
+        <button class="hamburger-btn" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <img src="../imagenes/Logo Klipz.png" class="header-logo">
+        <img src="" class="header-foto-perfil" id="fotoPerfilHome">
+    </header>
+
+<!-- seccion intro home -->
+
+    <div class="elementos-div-home" id="elementosDivHome">
+        <div class="elementos-intro-div-">
+            <h1 class="elementos-intro-titulo">
+                Welcome back.
+            </h1>
+        </div>
+            <button class="elementos-intro-boton-url" id="botonCopiarURLHome">
+                <img src="../iconos/url.svg" class="elementos-intro-boton-url-foto">
+                <span id="botonCopiarURLHomeTexto"></span>
+            </button>
+            <div class="elementos-estadisticas-div">
+                <p class="elementos-estadisticas-texto">
+                    Your stats:
+                </p>
+                <p class="elementos-estadisticas-visitas" id="elementosEstadisticasVisitas"></p>
+            </div>
+    </div>
+
+<!-- seccion page -->
+
+    <div class="elementos-div-page" id="elementosDivPage" style="display: none;">
+        <div class="elementos-div-intro-page">
+            <h1 class="elementos-div-titulo-page">
+                Customize your page:
+            </h1>
+            <button class="elementos-div-boton-publicar-page" id="publicarPageBoton">
+                Publish
+            </button>
+        </div>
+        <div class="elementos-personalizacion-imagenes-div-page">
+        <label for="inputPersonalizacionAvatar" class="elementos-personalizacion-input-avatar-page" id="labelPersonalizacionAvatar">
+            <input type="file" accept="image/*" id="inputPersonalizacionAvatar" style="display: none;">
+        </label>
+        <label for="inputPersonalizacionBanner" class="elementos-personalizacion-input-banner-page" id="labelPersonalizacionBanner">
+            <input type="file" accept="image/*" id="inputPersonalizacionBanner" style="display: none;">
+        </label>
+        </div>
+        
+        <div class="elementos-personalizacion-div-page">
+        </div>
+        <div class="elementos-informacion-div-page">
+            <div class="fila-bio-links">
+            <div class="elementos-informacion-bio-div-page">
+                <p class="elementos-informacion-bio-titulo-div-page">
+                    Bio:
+                </p>
+                <textarea maxlength="100" class="elementos-informacion-bio-textarea-div-page" id="bioTextareaPage"></textarea>
+
+                <!-- Wigdets -->
+
+               <div class="widget-musica-div">
+                 <input type="checkbox" class="widget-musica-checkbox" id="widgetMusicCheckbox">
+                 <div class="widget-musica-inputs-container">
+                 <input class="widget-musica-div-titulo" id="musicaTituloCancion" placeholder="Song title">
+                 <input type="file" accept="audio/mp3,audio/mpeg" class="widget-musica-input" id="widgetMusicUrlInput">
+                </div>
+              </div>
+            </div>
+
+            <!-- Links -->
+
+            <div class="elementos-informacion-links-div-page">
+                <p class="elementos-informacion-links-titulo-div-page">
+                    Links:
+                </p>
+                <input class="elementos-informacion-links-input-page" id="inputPageLinkInstagram" placeholder="https://www.instagram.com/your-username/">
+                <input class="elementos-informacion-links-input-page" id="inputPageLinkTikTok" placeholder="https://www.tiktok.com/@your-username">
+                <input class="elementos-informacion-links-input-page" id="inputPageLinkDiscord" placeholder="https://discordapp.com/users/USERID (or Discord server)">
+                <input class="elementos-informacion-links-input-page" id="inputPageLinkPayPal" placeholder="paypal.me/your-username">
+            </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+<!-- side var -->
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <nav class="side-var-nav">
+        <button class="side-var-nav-boton" id="sideVarNavBotonHome">
+            <img src="../iconos/casa.svg" height="30px">
+            Home
+        </button>
+        <button class="side-var-nav-boton" id="sideVarNavBotonPage">
+            <img src="../iconos/papel.svg" height="30px">
+            Page
+        </button>
+    <div class="botones-cuenta">
+        <button class="botones-cuenta-cerrar-sesion">Log Out</button>
+        <button class="botones-cuenta-eliminar-cuenta">Delete Account</button>
+    </div>
+    </nav>
+
+    </div>
+
+<!-- footer -->
+    <footer class="dashboard-footer">
+        <div class="dashboard-footer-content">
+            <div class="dashboard-footer-left">
+                <div class="dashboard-footer-section">
+                    <h2 class="dashboard-footer-title">Legal</h2>
+                    <a href="terms.html" class="dashboard-footer-link">Terms & Conditions</a>
+                    <a href="privacy.html" class="dashboard-footer-link">Privacy Policy</a>
+                </div>
+                <div class="dashboard-footer-section">
+                    <h2 class="dashboard-footer-title">Social</h2>
+                    <a href="https://www.tiktok.com/@klipz.fun" class="dashboard-footer-link" target="_blank">TikTok</a>
+                    <a href="https://discord.gg/ZdJZPnyDNn" class="dashboard-footer-link" target="_blank">Discord</a>
+                    <a href="https://x.com/klipzfun" class="dashboard-footer-link" target="_blank">Twitter</a>
+                </div>
+            </div>
+            <div class="dashboard-footer-section dashboard-footer-logo-center">
+                <img src="../imagenes/Logo Klipz.png" class="dashboard-footer-logo-img">
+            </div>
+            <div class="dashboard-footer-section dashboard-footer-copyright-right">
+                <p class="dashboard-footer-copyright">Klipz is a link in bio creator. © All rights reserved. Klipz 2026.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/dashboard.js"></script>
+
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4218623096d841118f173b00bba5bbbe"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

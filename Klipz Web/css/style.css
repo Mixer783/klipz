@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+/* todo el header */
+
+header{
+    background-color: black;
+    width: 700px;
+    height: 110px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 99;
+}
+
+.header-nav{
+    margin: auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-nav-link1{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    background-color: rgb(125, 3, 248);
+    font-size: 20px;
+    height: 50px;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.header-nav-link1:hover{
+    background-color: violet;
+}
+
+.header-nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 20px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.header-nav-link:hover{
+    background-color: rgba(128, 128, 128, 0.356);
+}
+
+.header-logo{
+    padding-right: 20px;
+}
+
+/* parte de la intro */
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 1000px;
+    background: url(../imagenes/fondoklipz.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-titulo{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 70px;
+}
+
+.intro-descripcion{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 29px;
+    margin-top: 10px;
+}
+
+.intro-boton{
+    margin-top: 30px;
+    height: 100px;
+    width: 300px;
+    background-color: rgb(125, 3, 248);
+    border: none;
+    color: white;
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 29px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.intro-boton:hover{
+    background-color: violet;
+}
+
+/* parte de los ejemplos */
+
+.ejemplos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 1300px;
+}
+
+.ejemplos-titulo{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 70px;
+    padding-top: 50px;
+}
+
+.ejemplos-plantillas{
+    display: flex;
+    gap: 50px;
+}
+
+.ejemplos-plantillas-imagen-movil{
+    border-radius: 10px;
+}
+
+.ejemplos-plantillas-imagen-pc{
+    border-radius: 10px;
+}
+
+.ejemplos-descripcion{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 25px;
+    padding-top: 25px;
+}
+/* parte del usuario */
+
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    background: url(../imagenes/fondousuario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.usuario-titulo{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 70px;
+    margin-top: -60px;
+}
+
+.usuario-barra-busqueda{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.usuario-barra-busqueda-input{
+    height: 70px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+.usuario-barra-busqueda-input::placeholder{
+    color: rgba(255, 255, 255, 0.507);
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.usuario-barra-busqueda-input:focus{
+    border: solid 2px violet;
+}
+
+.usuario-barra-busqueda-titulo{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 25px;
+}
+
+.usuario-barra-busqueda-input-boton{
+    height: 70px;
+    width: 100px;
+    background-color: rgb(125, 3, 248);
+    border: none;
+    color: white;
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 29px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.usuario-barra-busqueda-input-boton:hover{
+    background-color: violet;
+}
+
+.usuario-barra-busqueda-log{
+    color: red;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 20px;
+}
+
+/* parte del acerca */
+
+.acerca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    background: linear-gradient(rgba(48, 0, 66, 0.267), black);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.acerca-titulo{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 70px;
+}
+
+.acerca-descripcion{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 45px;
+    margin-top: -30px;
+}
+
+/* footer */
+
+.linea{
+    width: 700px;
+    border-top: 1px solid rgba(128, 128, 128, 0.473);
+    margin: auto;
+}
+
+footer{
+    background: linear-gradient(rgb(0, 0, 0),rgb(48, 0, 66));
+    height: 1200px;
+    position: relative;
+}
+
+.footer-nav{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.footer-nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 20px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 190px;
+    border-radius: 10px;
+}
+
+.footer-nav-link:hover{
+    background-color: rgba(128, 128, 128, 0.356);
+}
+
+.footer-nav-klipz{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-nav-klipz-titulo{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 45px;
+}
+
+.footer-nav-klipz-titulo:hover{
+    color: violet;
+}
+
+.footer-nav-legal{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-nav-legal-titulo{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 45px;
+}
+
+.footer-nav-legal-titulo:hover{
+    color: violet;
+}
+
+.footer-nav-social{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-nav-social-titulo{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 45px;
+}
+
+.footer-nav-social-titulo:hover{
+    color: violet;
+}
+
+.footer-logo-nav{
+    margin-left: 450px;
+}
+
+.footer-nav-breve-descripcion{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 10px;
+}
+
+.footer-logo{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+/* MEDIA QUERIES */
+
+/* Media queries de moviles */
+
+@media (max-width: 600px){
+
+header{
+    background-color: black;
+    width: 350px;
+    height: 110px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 99;
+}
+
+.header-logo{
+    display: none;
+}
+
+.header-nav-link1{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    background-color: rgb(125, 3, 248);
+    font-size: 13px;
+    height: 50px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.intro-titulo{
+    margin-left: 5px;
+}
+
+.intro-descripcion{
+    margin-left: 5px;
+}
+
+.ejemplos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 1100px;
+}
+
+.ejemplos-titulo{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 70px;
+    margin-left: 5px;
+}
+
+.ejemplos-plantillas-imagen-movil{
+    height: 400px;
+}
+
+.ejemplos-plantillas-imagen-pc{
+    display: none;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    background: url(../imagenes/fondousuario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.usuario-titulo{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 60px;
+}
+
+.usuario-barra-busqueda{
+    display: flex;
+    align-items: center;
+}
+
+.usuario-barra-busqueda-input{
+    height: 70px;
+    width: 190px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+.usuario-barra-busqueda-titulo{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.usuario-barra-busqueda-input-boton{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(125, 3, 248);
+    border: none;
+    color: white;
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.usuario-barra-busqueda-log{
+    color: red;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 20px;
+}
+
+.acerca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    background: linear-gradient(rgba(48, 0, 66, 0.267), black);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.acerca-titulo{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 60px;
+}
+
+.acerca-descripcion{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.linea{
+    width: 300px;
+    border-top: 1px solid rgba(128, 128, 128, 0.473);
+    margin: auto;
+}
+
+footer{
+    background: linear-gradient(rgb(0, 0, 0),rgb(48, 0, 66));
+    height: 450px;
+    position: relative;
+}
+
+.footer-nav{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.footer-nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 12px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 160px;
+    border-radius: 10px;
+}
+
+.footer-nav-klipz{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-nav-klipz-titulo{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 20px;
+}
+
+.footer-nav-legal{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-nav-legal-titulo{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 20px;
+}
+
+.footer-nav-social{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-nav-social-titulo{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 20px;
+}
+
+.footer-logo-nav{
+    display: none;
+}
+
+.footer-nav-breve-descripcion{
+    display: none;
+}
+
+.footer-logo{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    height: 100px;
+}
+}
+
+/* media queries de tablet */
+
+@media (max-width: 1024px){
+
+.intro-titulo{
+    font-size: 50px;
+}
+
+.ejemplos-titulo{
+    font-size: 50px;
+}
+
+.ejemplos-plantillas-imagen-movil{
+    height: 900px;
+}
+
+.ejemplos-plantillas-imagen-pc{
+    display: none;
+}
+
+.acerca-descripcion{
+    margin-left: 15px;
+}
+
+footer{
+    height: 700px;
+}
+
+.footer-logo-nav{
+    display: none;
+}
+
+.footer-nav-breve-descripcion{
+    display: none;
+}
+
+.footer-logo{
+    height: 200px;
+}
+
+}

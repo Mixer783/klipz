@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+body{
+    background-color: black;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.div-elementos{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.div-logo{
+    margin-right: 300px;
+}
+
+.div-logo-texto{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 30px;
+}
+
+/* auth */
+
+input{
+    height: 40px;
+    width: 500px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+    border: 1px solid rgb(41, 41, 41);
+    transition: border-color .15s ease;
+    color: white;
+}
+
+input::placeholder{
+    color: rgb(99, 99, 99);
+    padding-left: 10px;
+}
+
+input:focus{
+    border: solid 2px violet;
+}
+
+#loginBox{
+    display: none;
+}
+
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.auth-box-titulo{
+    color: rgb(125, 3, 248);
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 50px;
+}
+
+.boton-auth-cuenta{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    background: none;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.boton-auth-cuenta:hover{
+    color: violet;
+}
+
+/* register box*/
+
+.register-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(39, 39, 39, 0.404);
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(44, 44, 44);
+    border-radius: 20px;
+}
+
+.auth-box-form-email-texto{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 30px;
+}
+
+.auth-box-form-contraseña-texto{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 30px;
+}
+
+.auth-submit-button{
+    text-decoration: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    background-color: rgb(125, 3, 248);
+    font-size: 20px;
+    height: 50px;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+.enseñar-contraseña{
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: inline;
+}
+
+.auth-submit-button:hover{
+    background-color: violet;
+}
+
+/* login box*/
+
+.login-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(39, 39, 39, 0.404);
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(44, 44, 44);
+    border-radius: 20px;
+}
+
+/* username box */
+
+#usuarioBox{
+    display: none;
+}
+
+#usuarioBoxAtras{
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#usuarioBoxAtras:hover{
+    color: violet;
+}
+
+.eleccion-usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(39, 39, 39, 0.404);
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(44, 44, 44);
+    border-radius: 20px;
+}
+
+.eleccion-usuario-titulo{
+    color: white;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 30px;
+}
+
+.aceptar-terminos-label{
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 10px;
+    color: white;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.aceptar-terminos-input{
+    height: 30px;
+    width: auto;
+    display: flex;
+    cursor: pointer;
+}
+
+.eleccion-usuario-errores{
+    color: red;
+    font-family: 'Google Sans Flex';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 10px;
+}
+
+/* MEDIA QUERIES */
+
+/* Media queries de moviles */
+
+@media (max-width: 600px){
+
+.div-logo{
+    display: none;
+}
+
+input{
+    width: 300px;
+}
+
+.register-box{
+    width: 350px;
+    margin-top: 50px;
+}
+
+.login-box{
+    width: 350px;
+    margin-top: 50px;
+}
+
+#usuarioBox{
+    width: 350px;
+    margin-top: 50px;
+}
+}
+
+/* media queries de tablet */
+
+@media (max-width: 1024px){
+
+.div-elementos{
+    flex-direction: column;
+}
+
+.div-logo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.div-logo-texto{
+    display: none;
+}
+
+.div-auth{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+}

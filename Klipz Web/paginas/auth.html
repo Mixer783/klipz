@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/auth.css" rel="stylesheet">
+    <title>Klipz Account</title>
+</head>
+<body>
+    <div class="div-elementos">
+        <div class="div-logo">
+            <img src="../imagenes/Logo Klipz.png" height="200px">
+            <p class="div-logo-texto">Let's start.</p>
+        </div>
+        <div class="div-auth">
+
+<!-- registro -->
+
+    <div class="register-box" id="registerBox">
+        <h1 class="auth-box-titulo">
+            Register
+        </h1>
+        <form class="auth-box-form">
+            <p class="auth-box-form-email-texto">
+                Email Address
+            </p>
+            <input class="register-input-email" type="text" placeholder="Your email address" required id="registerEmailInput">
+            <p class="auth-box-form-contraseña-texto">
+                Password
+            </p>
+            <input class="register-input-contraseña" type="password" placeholder="Make a password" required id="registerPasswordInput">
+            <button class="enseñar-contraseña" onclick="enseñarContraseñaRegistro()" type="button">
+                <img src="../iconos/ojos.svg" height="20px" class="img-enseñar-contraseña">
+            </button>
+            <button class="auth-submit-button" type="submit" id="registerSubmitButton">
+                Submit
+            </button>
+        </form>
+        <button class="boton-auth-cuenta" id="enseñarLogin">
+            I have an account
+        </button>
+    </div>
+
+<!-- logeo -->
+
+    <div class="login-box" id="loginBox">
+        <h1 class="auth-box-titulo">
+            Log In
+        </h1>
+        <form class="auth-box-form">
+            <p class="auth-box-form-email-texto">
+                Email Address
+            </p>
+            <input class="login-input-email" type="text" placeholder="Your email address" required id="loginEmailInput">
+            <p class="auth-box-form-contraseña-texto">
+                Password
+            </p>
+            <input class="login-input-contraseña" type="password" placeholder="Make a password" required id="loginPasswordInput">
+            <button class="enseñar-contraseña" onclick="enseñarContraseñaLogin()" type="button">
+                <img src="../iconos/ojos.svg" height="20px" class="img-enseñar-contraseña">
+            </button>
+            <p class="eleccion-usuario-errores" id="logeoErroresLog"></p>
+            <button class="auth-submit-button" type="submit" id="loginSubmitButton">
+                Submit
+            </button>
+        </form>
+        <button class="boton-auth-cuenta" id="enseñarRegister">
+            I dont have an account
+        </button>
+    </div>
+
+<!-- username -->
+
+    <div class="eleccion-usuario" id="usuarioBox">
+    <button id="usuarioBoxAtras">
+        Go Back
+    </button>
+    <h1 class="eleccion-usuario-titulo">
+        Choose an username
+    </h1>
+    <form class="eleccion-usuario-form">
+        <input class="eleccion-usuario-form-input" type="text" placeholder="klipz.gg/your-username" required id="registerUsernameInput">
+        <p class="eleccion-usuario-errores" id="usernameErroresLog"></p>
+        <label class="aceptar-terminos-label">
+            <input class="aceptar-terminos-input" type="checkbox" required id="termsAceptationInput">
+            <p>You agree that you have read and accept the <a href="terms.html">Terms of Conditions</a> and the <a href="privacy.html">Privacy Policy</a> of Klipz.</p>
+        </label>
+            <button class="auth-submit-button" type="submit" id="usuarioSubmitButton">
+                Submit
+            </button>
+    </form>
+    </div>
+</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/auth.js"></script>
+
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4218623096d841118f173b00bba5bbbe"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

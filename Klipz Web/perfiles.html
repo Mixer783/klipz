@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/perfiles.css" rel="stylesheet">
+    <title>Klipz (PONER USUARIO)</title>
+</head>
+<body>
+    <header id="bannerPerfilPublico">
+        <div class="header-transicion"></div>
+    </header>
+
+<div class="elementos-perfil-info-container">
+    <img src="" class="elementos-avatar-perfil" id="elementosAvatarPerfil">
+
+    <div class="elementos-header-perfil-cosas">
+        <h1 class="elementos-header-perfil-info-username" id="elementosUsernamePerfil"></h1>
+        <div class="elementos-header-perfil-info-redes">
+            <a href="" id="elementosRedesPerfil0" target="_blank" style="display: none;"><img src="../iconos/instagram.svg"></a>
+            <a href="" id="elementosRedesPerfil1" target="_blank" style="display: none;"><img src="../iconos/discord.svg"></a>
+            <a href="" id="elementosRedesPerfil2" target="_blank" style="display: none;"><img src="../iconos/tiktok.svg"></a>
+            <a href="" id="elementosRedesPerfil3" target="_blank" style="display: none;"><img src="../iconos/paypal.svg"></a>
+        </div>
+    </div>
+</div>
+
+<div class="elementos-perfil">
+    <p class="elementos-perfil-descripcion" id="elementosDescripcionPerfil"></p>
+</div>
+
+<div class="linea"></div>
+
+<!--Wigets-->
+
+            <div class="elementos-perfil-widgets">
+
+<!--Wigets musica-->
+
+                <div class="elementos-perfil-widgets-musica" id="musicaWidgetDiv" style="display: none;">
+                <p class="musica-titulo" id="musicaTitulo">Loading...</p>
+    
+                <div class="musica-controles">
+                    <span class="musica-tiempo" id="musicaTiempoActual">0:00</span>
+                    <input type="range" class="musica-barra" id="musicaBarra" value="0" min="0" max="100">
+                    <span class="musica-tiempo" id="musicaTiempoTotal">0:00</span>
+                </div>
+
+                <button class="musica-boton-play" id="musicaBotonPlay">▶</button>
+
+                <audio id="musicaAudioElement" autoplay loop></audio>
+                </div>
+
+<!--Futuros wigets-->
+
+            </div>
+        </div>
+
+<div class="elementos-watermark">
+    <img src="../imagenes/Logo Klipz.png" height="50px">
+    <a href="https://www.klipz.fun/" class="elementos-watermark-texto" target="_blank">Make Yours</a>
+    <img src="../iconos/flecha-link.png" height="20px">
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/perfiles.js"></script>
+</body>
+</html>
